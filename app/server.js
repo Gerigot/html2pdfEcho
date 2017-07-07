@@ -18,7 +18,6 @@ app.get("/test", (req, res) => {
                 return;
             }
             res.setHeader("content-type", "application/pdf");
-            res.setHeader("content-disposition", "attachment");
             stream.pipe(res);
         });
     });
